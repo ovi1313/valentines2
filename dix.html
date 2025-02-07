@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Dixita ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffccdd;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            margin-top: 50px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            animation: pop 0.5s ease-in-out;
+        }
+        img {
+            width: 200px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #ff6699;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff3366;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes pop {
+            0% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="content">
+        <h2>HI :3</h2>
+        <button onclick="nextStep(1)">Okay</button>
+    </div>
+
+    <script>
+        function nextStep(step) {
+            const content = document.getElementById("content");
+            content.innerHTML = "";
+            
+            if (step === 1) {
+                content.innerHTML = `<p>Well, I know this is awkward 😭</p>
+                                     <button onclick='nextStep(2)'>Continue</button>`;
+            } else if (step === 2) {
+                content.innerHTML = `<p>Well, let's start with some questions! Do you like Valentine's? 🤔</p>
+                                     <button onclick='nextStep(3)'>Very much</button>
+                                     <button onclick='nextStep(3)'>Kinda</button>
+                                     <button onclick='nextStep(3)'>No</button>
+                                     <button onclick='nextStep(3)'>Hate it</button>`;
+            } else if (step === 3) {
+                content.innerHTML = `<p>Have you ever celebrated Valentine's before?</p>
+                                     <button onclick='nextStep(4)'>Many times</button>
+                                     <button onclick='nextStep(4)'>A few</button>
+                                     <button onclick='nextStep(4)'>Once</button>
+                                     <button onclick='nextStep(4)'>Never</button>`;
+            } else if (step === 4) {
+                content.innerHTML = `<p>Well, I know these distances keep us apart, but my feelings do not alter.</p>
+                                     <button onclick='nextStep(5)'>Continue</button>`;
+            } else if (step === 5) {
+                content.innerHTML = `<p>Since the first day I saw you, I felt something in me.</p>
+                                     <button onclick='nextStep(6)'>Continue</button>`;
+            } else if (step === 6) {
+                content.innerHTML = `<p>But I stayed, refrained my feelings, and was mean to you lol 😭😭</p>
+                                     <button onclick='nextStep(7)'>Continue</button>`;
+            } else if (step === 7) {
+                content.innerHTML = `<p>I fell for you despite the distance. 🐱🐰💕</p>
+                                     <button onclick='nextStep(8)'>Continue</button>`;
+            } else if (step === 8) {
+                content.innerHTML = `<p>I don't show it to not make it awkward, and I know online doesn't work, but I'm happy to have you regardless. 💕</p>
+                                     <button onclick='nextStep(9)'>Okay</button>`;
+            } else if (step === 9) {
+                content.innerHTML = `<p>I desire you. I adore you. 😍</p>
+                                     <button onclick='nextStep(10)'>Okay</button>`;
+            } else if (step === 10) {
+                content.innerHTML = `<p>Leave a rating for me 😁😼</p>
+                                     <button onclick='nextStep(11)'>2</button>
+                                     <button onclick='nextStep(11)'>5</button>
+                                     <button onclick='nextStep(11)'>1</button>
+                                     <button onclick='nextStep(11)'>0</button>
+                                     <button onclick='nextStep(11)'>04</button>`;
+            } else if (step === 11) {
+                content.innerHTML = `<p>Those digits were your birth dates lol 😆</p>
+                                     <button onclick='nextStep(12)'>Continue</button>`;
+            } else if (step === 12) {
+                content.innerHTML = `<p>Well, you know all these girls are dying to date me 😎</p>
+                                     <button onclick='nextStep(13)'>Continue</button>`;
+            } else if (step === 13) {
+                content.innerHTML = `<p>But do you know whom I wanna have?</p>
+                                     <button onclick='nextStep(14)'>Continue</button>`;
+            } else if (step === 14) {
+                content.innerHTML = `<p>🫵🫵 👉👉</p>
+                                     <button onclick='nextStep(15)'>Continue</button>`;
+            } else if (step === 15) {
+                content.innerHTML = `<p>You might look like this after 50 years 😆</p>
+                                     <button onclick='nextStep(16)'>Continue</button>`;
+            } else if (step === 16) {
+                content.innerHTML = `<p>But I would still LOVE YOU ❤️</p>
+                                     <button onclick='nextStep(17)'>Continue</button>`;
+            } else if (step === 17) {
+                content.innerHTML = `<p>Dixita Sharma, would you be my online Valentine? 💕</p>
+                                     <button onclick='nextStep(18)'>Yes</button>`;
+            } else if (step === 18) {
+                content.innerHTML = `<p>💖💖💖</p>
+                                     <div id='final-images'>
+                                         <!-- Add images here later -->
+                                     </div>`;
+            }
+        }
+    </script>
+</body>
+</html>
